@@ -8,7 +8,7 @@ Section 2 contains a description of the names of the feature variables, to assis
 Section 3 contains the Data Dictionary, which provides definitions of the variables and their units.
 
 
-## Processing Steps
+## Section 1: Processing Steps
 The following steps describe the process starting from the raw data and ending with a table summarizing the mean values of the feature vectors, grouped by subject ID and Activity.  For further information, see run_analysis.R.
 
 1. Read in all the raw data from the training group and the test group, including feature data, subject, and activity.  Also, read in the list of feature names.
@@ -21,7 +21,7 @@ The following steps describe the process starting from the raw data and ending w
 
 
 
-## Description of Feature Variables
+## Section 2: Description of Feature Variables
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -65,7 +65,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 * tBodyGyroMean
 * tBodyGyroJerkMean
 
-## Data Dictionary
+## Section 3: Data Dictionary
 
 The complete list of variables of each feature vector is available in the list below, wherein:
 * Subject is an integer from 1-30
