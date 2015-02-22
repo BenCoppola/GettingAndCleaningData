@@ -17,7 +17,7 @@ The dataset includes the following files:
 
 - 'README.md': This file
 - 'final_result.txt': A table listing the mean value of each feature, grouped by subject and activity
-- 'codebook.md': A description of the processing steps to create the tidy data set in final_result.txt'
+- 'code book.md': A description of the processing steps to create the tidy data set in final_result.txt'
 - 'run_analysis.R': The R code that does the processing outlined by codebook.md
 
 
