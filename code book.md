@@ -69,7 +69,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 
 The complete list of variables of each feature vector is available in the list below, wherein:
 * Subject is an integer from 1-30
-* Activity is a string representings one of the following: 1: WALKING, 2: WALKING_UPSTAIRS, 3: WALKING_DOWNSTAIRS, 4: SITTING, 5: STANDING, 6: LAYING
+* Activity is on of the following strings: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 * Features (columns 3-68) are numeric values which are normalized and bounded within [-1,1]
 
 Column|Variable
