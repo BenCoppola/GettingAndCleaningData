@@ -24,7 +24,7 @@ The dataset includes the following files:
 
 For more information about the original dataset, contact: activityrecognition@smartlab.ws
 
-License:
+#####License:
 
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
 
