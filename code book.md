@@ -9,12 +9,19 @@ Section 3 contains the Data Dictionary, which provides definitions of the variab
 
 
 ## Processing Steps
+The following steps describe the process starting from the raw data and ending with a table summarizing the mean values of the feature vectors, grouped by subject ID and Activity.  For further information, see run_analysis.R.
+
+1. Read in all the raw data from the training group and the test group, including feature data, subject, and activity.  Also, read in the list of feature names.
+2. Assemble a data frame that combines all of the data from step 1 together.  This creates a data frame with 10299 observations and 563 variables.  The variables include the Subject, the Activity, and 561 feature variables.  The 10299 observations include multiple measurements from 30 subjects repeating 6 activities.
+3. Assign descriptive names to the columns of the data frame. The feature names are taken from 'features.txt'
+4. Identify the feature variables which include "mean" and "std" (standard deviation), and subset the data frame to include only those columns. This reduces the number of feature variables from 561 to 66. (Note: MeanFreq was not included because this function does not have an associated standard deviation. )
+5. Replace the numeric Activity codes in the data frame with the equivalent string as found in "activity_labels.txt'
+6. Clean up the column names in the data frame to be more consisten with R variable names.  Remove paranthesis and '-'.
+7. Create a new tidy data set that contains the average of each variable for each activity and each subject.  This data frame has 180 observations (30 subjects * 6 activities). The number of feature variables is still 66.
 
 
 
-
-### Description of Feature Variables
-=================
+## Description of Feature Variables
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
