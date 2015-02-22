@@ -1,6 +1,8 @@
 # Code Book
 This code book consists of two sections.
+
 Section 1 contains a description of the processing steps performed to create a tidy state for the Coursera class "Getting and Cleaning Data." Further information about the raw data set may be found in Readme.md.
+
 Section 2 contains the Data Dictionary, which provides definitions of the variables and their units.
 
 
