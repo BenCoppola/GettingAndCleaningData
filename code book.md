@@ -3,7 +3,9 @@ This code book consists of two sections.
 
 Section 1 contains a description of the processing steps performed to create a tidy state for the Coursera class "Getting and Cleaning Data." Further information about the raw data set may be found in Readme.md.
 
-Section 2 contains the Data Dictionary, which provides definitions of the variables and their units.
+Section 2 contains a description of the names of the feature variables, to assist in understanding of the Data Dictionary in Section 3.
+
+Section 3 contains the Data Dictionary, which provides definitions of the variables and their units.
 
 
 ## Processing Steps
@@ -11,7 +13,7 @@ Section 2 contains the Data Dictionary, which provides definitions of the variab
 
 
 
-### Feature Selection 
+### Description of Feature Variables
 =================
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
